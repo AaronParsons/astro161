@@ -1,0 +1,83 @@
+\documentclass[12pt,preprint]{aastex}
+\usepackage[margin=1in]{geometry}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref} % for \url, etc
+\usepackage{subfigure}
+\usepackage{placeins} % for \FloatBarrier
+
+% units
+\def\Mpc{\mathrm{Mpc}}
+\def\W{\mathrm{W}}
+\def\K{\mathrm{K}}
+\def\e{\mathrm{e}}
+\def\h{\mathrm{h}}
+\def\pc{\mathrm{pc}}
+\def\kpc{\mathrm{kpc}}
+\def\m{\mathrm{m}}
+\def\km{\mathrm{km}}
+\def\s{\mathrm{s}}
+\def\MeV{\mathrm{MeV}}
+
+% astro constants
+\def\Msol{\mathrm{M_\odot}}
+\def\Rsol{\mathrm{R_\odot}}
+\def\Lsol{\mathrm{L_\odot}}
+\def\Fsol{\mathrm{F_\odot}}
+\def\Dearth{\mathrm{D_\oplus}}
+\def\Rearth{\mathrm{R_\oplus}}
+
+% miscellaneous 
+\def\mfp{d_{\mathrm{mfp}}}
+\def\WA{Wolfram\textbar Alpha }
+\newcommand\sn[2]{#1 \times 10^{#2}}
+\def\half{\frac{1}{2}}
+\def\rs{R_s}
+\def\Ymax{Y_{\mathrm{max}}}
+\def\He{^4\mathrm{He}}
+\def\tnuc{t_{\mathrm{nuc}}}
+\def\Trec{T_{\mathrm{rec}}}
+
+\title{Problem Set 7}
+\begin{document}
+\maketitle
+\centerline{Astro C161} 
+
+\centerline{Due Friday, March 11, 4:00 pm}
+
+\begin{enumerate}
+\setcounter{enumi}{-1}
+
+\item \textbf{TALC} \textit{(5 pts)}: Come to your assigned section of TALC. There will be a quiz/worksheet to record your attendance.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Part (a) is taken from Ryden 9.1
+\item \textbf{Constraints on Recombination} \textit{(35 pts)}: In this problem we will determine how the uncertainty in the value of the baryon-to-photon ratio, $\eta$ affects the recombination temperature, $\Trec$ in the early universe. Then we will flip the scenario around and use measurements of the CMB to constrain $\eta$. 
+	\begin{enumerate}
+	\item Plot the fractional ionization $X$ as a function of temperature in the range $3000\ \K < T < 4500\ \K$ for two values of the baryon-to-proton ratio, $\eta = \sn{4}{-10}$ and $\eta = \sn{8}{-10}$. How much does this change in $\eta$ affect the computed value of the recombination temperature $\Trec$, if we define $\Trec$ as the temperature at which $X = \half$. 
+	\item Assuming a radiation dominated universe, compute the temperature of photons at matter-radiation equality. Find a relation for temperature as a function of redshift assuming that you know the redshift at matter-radiation equality, $z_{eq}$. 
+	\item The best measurements of the CMB to date come from the Planck Collaboration. In their 2015 results, they found that the redshift of reionization is $z_* = 1089.90 \pm 0.23$, and the redshift of matter-radiation equality is $z_{eq} =  3393 \pm 49$. Use your result from part (b) to find the temperature at recombination $\Trec$ and the uncertainty in that value. 
+	\item How well can the Planck results from part (c) constrain the baryon-to-photon ratio $\eta$?
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ryden 8.26
+\item \textbf{MACHO Dark Matter} \textit{(30 pts)}: It has been proposed that Massive Astrophysical Compact Halo Objects (MACHOs)\footnote{Created as a humorous riposte to the acronym ``WIMPs'' (Weakly Interacting Massive Particles), which had been proposed as possible candidates for Dark Matter particles.} could account for Dark Matter. MACHOs are objects like black holes, neutron stars, brown dwarfs, and unassociated planets that emit little to no radiation. This problem explores order-of-magnitude calculations to test the reasonableness of this hypothesis.
+	\begin{enumerate}
+	\item Suppose that black holes of mass $10^{-8}\ \Msol$ made up all of the dark matter in the halo of our galaxy. How far away would you expect the nearest such black hole to be? How frequently would you expect such a black hole to pass within 1AU of the Sun?
+	\item Suppose that MACHOs of mass $10^{-3}\ \Msol$ (about the mass of Jupiter) made up all of the dark matter in the halo of our galaxy. How far away would you expect the nearest MACHO to be? How frequently would such a MACHO pass within 1 AU of the Sun? 
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ryden 8.27
+\item \textbf{Draco's Dark Matter} \textit{(30 pts)}: The Draco galaxy is a dwarf galaxy within the Local Group. Its luminosity is $L = \sn{(1.8 \pm 0.8)}{5}\ \Lsol$ and half its total luminosity is contained within a sphere of radius $r_h = 120 \pm 12\ \pc$. The red giant stars in the Draco galaxy are bright enough to have their line-of-sight measured. The measured velocity dispersion of the red giant stars in the Draco galaxy is $\sigma_r = (10.5 \pm 2.2)\ \km/\s$. 
+	\begin{enumerate}
+	\item What is the mass of the Draco galaxy? (Include the error)
+	\item What is its mass-to-light ratio? (Include the error) Compare this number to typical astronomical sources.
+	\end{enumerate}
+
+\end{enumerate}
+
+\end{document}  
+
