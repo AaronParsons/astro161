@@ -2,7 +2,7 @@
 \usepackage[margin=1in]{geometry}  
 \usepackage{graphicx}
 \usepackage{amssymb}
-\usepackage{hyperref} % for \url, etc
+
 
 \def\Mpc{\mathrm{Mpc}}
 \def\pc{\mathrm{pc}}
@@ -41,7 +41,6 @@
 \def\calo{\,{\rm calorie}}
 \def\dyne{\,{\rm dyne}}
 \def\s{\,{\rm s}}
-\def\ms{\,{\rm ms}}
 \def\at{\, {\rm atmosphere}}
 \def\J{\,{\rm joule}}
 \def\pomega{\tilde{\omega}}
@@ -62,30 +61,32 @@
 
 \item \textbf{TALC} \textit{(5 pts)}: Come your TALC section. There will be a sign-up sheet to record your attendance. 
 
-\item \textbf{Computing Nucleosynthesis} \textit{(95 pts)}: Here we will code a simulation of a simple model of the beginning of nucleosynthesis. If you haven't done any computational physics, \textbf{it is ok}. We wrote this problem so that you could do it even as a first-time programer. Use this skeleton of a Python program at \url{https://github.com/AaronParsons/astro161/blob/master/code/ps06_example.py}
-\normalsize as a starting point (even if you want to start from scratch, you should use the same naming conventions for functions). 
+\item \textbf{Computing Nucleosynthesis} \textit{(95 pts)}: Here we're going to try to code a simple model of the beginning of nucleosynthesis. If you haven't done any computational physics, \textbf{it is ok}. We wrote this problem so that you could do it as an introduction. We've also written the skeleton of a python program \small \begin{verbatim}
+https://github.com/AaronParsons/astro161/blob/master/code/ps06_ example.py 
+\end{verbatim}
+\normalsize that you can flesh out as you begin. 
 
-We are all most comfortable working in Python, so it will be easiest for you to get help if you work in that. If you need to download a distribution of Python, we suggest using the Anaconda distribution (\url{https://www.continuum.io/downloads}). If you get errors or do not know how to implement a feature or function, please check the Python documentation (\url{https://docs.python.org/3/}) or Stack Overflow. As a rule, we will not be troubleshooting your errors ourselves because, if we start to do that, we will never get done fixing them.
+We are all most comfortable working in python so, unless you have a preferred programming language, it will be easiest for you to get help if you are working in that. If you need to download a distribution of python, we suggest Anaconda \linebreak (https://www.continuum.io/downloads). If you're getting errors or do not know how to implement a feature or function, please check the python documentation \linebreak (https://docs.python.org/3/) or Stack Overflow. As a rule, we will not be troubleshooting your errors ourselves because, if we start to do that, we will never get done fixing them.
 
 When turning in your homework, please staple your code to the write-up.
  
 \begin{enumerate}
-	\item Write functions returning the number density of neutrinos vs. temperature
+	\item Write functions describing the number density of neutrinos vs. temperature
  and cross section of neutrinos vs. temperature until freeze-out.
  
-	\item Calculate the Hubble constant as a function of time and the temperature as a function of time. Write functions for both of those calculations.
+	\item Calculate the Hubble constant as a function of time and the temperature as a function of time.
 
-	\item Calculate the collision rate $\Gamma$ as a function of time. Write a function for that calculation.
+	\item Calculate the collision rate $\Gamma$ as a function of time.
 	
-	\item Calculate $t_{freeze}$. You will need this for a future function.
+	\item Calculate $t_{freeze}$.
 	 
-	\item Write a function describing the ratio of the neutron and proton number density for time before freeze-out. ($\sim 1\ms$ to $t_{freeze}$) 
+	\item Write a function describing the ratio of the neutron and proton number density for time before freeze-out. ($1\;ms-1s$) 
 	
-	\item Calculate the neutron decay rate from freeze-out up to deuterium formation. Add this calculation to the neutron-to-proton ratio function from the previous part. 
+	\item Calculate the neutron decay from freeze-out up to deuterium formation. 
 	
-	\item Calculate the deuterium/neutron ratio vs. time. Write a function for that calculation. 
+	\item Calculate the deuterium/neutron ratio vs. time. 
 	
-	\item Calculate the number density of protons vs. time. (Don't forget neutron decay where applicable.) 
+	\item Calculate the number density of protons vs. time. (don't forget neutron decay where applicable)
 	
 	\item Plot the collision rate vs. time
 	
@@ -95,7 +96,7 @@ When turning in your homework, please staple your code to the write-up.
 	
 	\item Plot the number density of protons, neutrons, and deuterium vs. time with neutron decay. Describe the difference between this plot and the last one.
 	
-	\item Give us the previous plot with all the same parameters except $\sigma_{\nu}$ has changed from $\sim 10^{-43}$ to $10^{-45}$. Give $Y_{max}$ for this new case and compare to the previous one.
+	\item Give us the previous plot with all the same parameters except $\sigma_{\nu}$ has changed from $~ 10^{-42}$ to $10^{-45}$. Give $Y_{max}$ for this new case and compare to the previous one.
 	
 	\item Why does the problem of describing nucleosynthesis become much tougher when we try to go to later times and fuse $\rm{^3He}$ and $\rm{^4He}$? 
 

@@ -1,0 +1,110 @@
+\documentclass[12pt,preprint]{aastex}
+\usepackage[margin=1in]{geometry}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+
+\def\Mpc{\mathrm{Mpc}}
+\def\pc{\mathrm{pc}}
+\def\Rsol{\mathrm{R_\odot}}
+\def\Lsol{\mathrm{L_\odot}}
+
+\renewcommand{\baselinestretch}{1.1}
+\newcommand{\bqu}{\begin{quote}}
+	\newcommand{\equ}{\end{quote}}
+\newcommand{\br}{\langle}
+\newcommand{\ke}{\rangle}
+\def\f#1#2{\frac{#1}{#2}}
+
+\def\ni{\noindent}
+\def\J{{\rm\,J}}
+\def\W{{\rm\,W}}
+\def\s{{\rm\,s}}
+\def\erg{{\rm\,erg}}
+\def\cm{{\rm\,cm}}
+\def\m{{\rm\,m}}
+\def\km{{\rm\,km}}
+\def\kg{{\rm\,kg}}
+\def\mm{{\rm\,mm}}
+\def\gm{{\rm\,g}}
+\def\g{{\rm\,g}}
+\def\d{\rm\,d}
+\def\h{\rm\,h}
+\def\mum{\,\mu{\rm m}}
+\def\K{{\rm\,K}}
+\def\yr{{\rm\,yr}}
+\def\Hz{{\rm\,Hz}}
+\def\days{{\rm\,days}}
+\def\cals{{\rm\,cals}}
+\def\mole{{\rm\,mole}}
+\def\gal{{\rm\,gal}}
+\def\calo{\,{\rm calorie}}
+\def\dyne{\,{\rm dyne}}
+\def\s{\,{\rm s}}
+\def\at{\, {\rm atmosphere}}
+\def\J{\,{\rm joule}}
+\def\pomega{\tilde{\omega}}
+\def\vs{\vspace{0.1in}}
+\def\n{\vspace{0.1in} \ni }
+
+
+\title{Problem Set 8}
+\begin{document}
+\maketitle
+\centerline{Astro C161} 
+
+\centerline{Due Friday, April 8, 4:00 pm}
+
+\begin{enumerate}
+\setcounter{enumi}{-1}
+
+\item \textbf{TALC} \textit{(5 pts)}: Come your TALC section. There will be a sign-up sheet to record your attendance.
+
+\item \textbf{The Power Spectrum} \textit{(40 pts)}: Answer part (b) in an essay form. It should answer all the following questions and be clear, concise, and orderly in doing so. 
+	
+Here is the angular power spectrum of our universe measuring the temperature fluctuations in the CMB:
+
+\includegraphics[width=6in]{AngularPowerSpectrum}
+
+\begin{enumerate}
+	
+	\item What physical scale does the highest perturbation peak correspond to? (Check out Ned's Cosmology Calculator \verb+http://www.astro.ucla.edu/~wright/CosmoCalc.html+) 
+
+\item How does this relate to the matter power spectrum and the density perturbations? What do does the x-axis mean, relating the multipole moment $l$ to k-modes? What do the first three peaks mean in a physical sense and what universal parameters can they reveal to us? What about the very high $l$ peaks? What would changing, say, curvature and baryon density do to the power spectrum and why? For more background, look at Wayne Hu's tutorials (\verb+\http://background.uchicago.edu/index.html+)
+and Max Tegmark's clickable widget (\verb+http://space.mit.edu/home/tegmark/movies.html+).
+\end{enumerate}
+
+\item \textbf{Playing with Perturbations} \textit{(40 pts)}: The growth of matter perturbations can be written as:
+
+$$ \ddot{\delta} + 2 \frac{\dot{a}}{a}\dot{\delta} = \frac{4\pi G}{c^2} \epsilon_m \delta$$
+
+\begin{enumerate}
+
+\item Consider a flat, matter-only universe. Use the Friedmann equation to show that $\frac{4\pi G}{c^2} \epsilon_m = \frac{3}{2} H_0^2 a^{-3} = \frac{2}{3t^2} $.
+
+\item Show that $\delta \propto t^{2/3} $ or $t^{-1}$.
+
+\item Change variables so that derivatives of $\delta$ refer to scale factor rather than time. using the convention that $\delta' = \frac{d \delta}{da}$, show that
+
+$$ \delta'' + \frac{\ddot{a}}{\dot{a}^2}\delta' + \frac{2}{a}\delta' = \frac{3\epsilon_m}{2\epsilon_{tot}}\frac{\delta}{a^2}$$
+
+\item \bqu \textit{Using the Friedmann equation in a radiation and matter universe, show that the previous equation becomes} \equ
+
+$$ \frac{d^2\delta}{dy^2} +\frac{2+3y}{2y(1+y)}\frac{d\delta}{dy}- \frac{3}{2y(1+y)}\delta = 0 $$
+
+\bqu \textit{where $y = \frac{\epsilon_m}{\epsilon_r} $. What are the growing and decaying solutions for $\delta$ in this universe in terms of $y$ in the radiation-dominated regime ($y<<1$)?} \equ
+
+\item \bqu \textit{When a perturbation in this universe is outside the horizon, it grows as $\delta \propto y^2$ in the RD era. When it enters the horizon, it is necessarily a mixture of growing and decaying modes. Show that} \equ
+
+$$ \delta(y) \approx 2y_e^2[(1+3y/2)ln(1/y_e)- ln(1/y)] $$
+
+\bqu \textit{where $y_e = y(t_{entry})$.} \equ
+
+
+\end{enumerate}
+
+\item \textbf{Presentation Outline} \textit{(15 pts)}: Upload the outline of your presentation to bCourses. Lay out what you're going to talk about, how you'll do it, and who will be doing it. Please cite a couple of your major sources as well.
+
+\end{enumerate}
+
+\end{document}  
