@@ -1,0 +1,113 @@
+\documentclass[12pt,preprint]{aastex}
+\usepackage[margin=1in]{geometry}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref} % for \url, etc
+\usepackage{subfigure}
+\usepackage{placeins} % for \FloatBarrier
+\usepackage{booktabs} % for pretty tables
+
+% units
+\def\Mpc{\mathrm{Mpc}}
+\def\W{\mathrm{W}}
+\def\K{\mathrm{K}}
+\def\N{\mathrm{N}}
+\def\e{\mathrm{e}}
+\def\h{\mathrm{h}}
+\def\pc{\mathrm{pc}}
+\def\kpc{\mathrm{kpc}}
+\def\m{\mathrm{m}}
+\def\km{\mathrm{km}}
+\def\kg{\mathrm{kg}}
+\def\s{\mathrm{s}}
+\def\MeV{\mathrm{MeV}}
+\def\eV{\mathrm{eV}}
+
+% astro constants
+\def\Msol{\mathrm{M_\odot}}
+\def\Rsol{\mathrm{R_\odot}}
+\def\Lsol{\mathrm{L_\odot}}
+\def\Fsol{\mathrm{F_\odot}}
+\def\Dearth{\mathrm{D_\oplus}}
+\def\Rearth{\mathrm{R_\oplus}}
+
+% miscellaneous 
+\def\eps{\varepsilon}
+\def\mfp{d_{\mathrm{mfp}}}
+\def\WA{Wolfram\textbar Alpha }
+\newcommand\sn[2]{#1 \times 10^{#2}}
+\def\half{\frac{1}{2}}
+\def\rs{R_s}
+\def\Ymax{Y_{\mathrm{max}}}
+\def\He{^4\mathrm{He}}
+\def\tnuc{t_{\mathrm{nuc}}}
+\def\Trec{T_{\mathrm{rec}}}
+\def\zrec{z_{\mathrm{rec}}}
+\def\nbary{n_{\mathrm{bary}}}
+\def\Tpl{T_{\mathrm{Pl}}}
+\def\tpl{t_{\mathrm{Pl}}}
+
+\title{Problem Set Problems}
+\begin{document}
+\maketitle
+\centerline{Astro C161} 
+
+\centerline{Due Friday, April 29, 4:00 pm}
+
+\begin{enumerate}
+\setcounter{enumi}{-1}
+
+\item \textbf{TALC} \textit{(5 pts)}: Come to your assigned section of TALC. There will be a sign in sheet to record your attendance.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\item \textbf{The Horizon Problem} \textit{(?? pts)}: This problem explores another perspective on the horizon problem, which counts how many causally disconnected regions there are in the universe at different times. We will use an order-of-magnitude calculation to figure out how big our current (homogenous) universe would have been during the early universe and then compare that size to the horizon distance at that time. Note: this argument only works assuming that inhomogeneity is not ``smoothed out'' by regular (non-inflating) expansion. 
+%	\begin{enumerate}
+%	\item We can approximate the horizon at any given time as $l \sim ct$. Given this, how big is the homogenous region today? Call that length scale $l_h(t_0)$.
+%	\item That homogenous region originated from a region of size $l_i$ at the Planck time. What is $l_i$, given that the Planck temperature is $\Tpl \sim 10^{32}\K$?
+%	\item Now we want to compare to the size of the horizon at the Planck time, $l_h(\tpl)$. What is $l_h(\tpl)$ given that the Planck time is $\tpl \sim 10^{-43}$? 
+%	\item What is the ratio $\frac{l_i}{l_h(\tpl)}$? How many causally disconnected regions were inside the original homogenous region? 
+%	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Initial Condition Problem} \textit{(36 pts)}: In this problem we will explore one of the theoretical problems with current formulations of inflationary theory. To do this we will examine the full Friedmann Equation of our universe:
+	$$ H^2(t) = \left ( \frac{\dot a(t)}{a(t)} \right ) ^2 = \left [ \frac{\Omega^0_m}{a^3} + \frac{\Omega^0_r}{a^4} + \Omega^0_\Lambda + \frac{\Omega^0_k}{a^2} + \frac{\Omega^0_\phi}{a^{2\epsilon}} \right ] $$
+	where $k$ denotes curvature, and $\phi$ denotes an inflationary field. It is convenient (as we will see later) to define a parameter $\epsilon$ such that the inflationary energy density scales as $\eps_\phi(a) \propto a^{-2\epsilon}$. 
+	\begin{enumerate}
+	\item Consider a universe dominated by an inflationary field. What constraint do we need to put on $\epsilon$ to ensure accelerating expansion? 
+	\item What is the relation between $\epsilon$ and the equation of state $w = p/\eps$? What constraint does accelerating expansion put on $w$? How does this value of $w$ compare to $w$ for matter, radiation, and $\Lambda$? 
+	\item Looking at the full Friedmann equation and using your result from part (a), which term would you expect to dominate in the early universe? What (if anything) would you need to do to make inflation dominate in the early universe? Explain whether this is problematic. 
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{The Inflationary Field} \textit{(27 pts)}: Say we have an inflationary field $\phi$ with a potential $V(\phi)$. This field can be characterized by an energy density 
+$$ \eps_\phi = \half \dot \phi^2 + V(\phi)$$ 
+and a pressure
+$$ p_\phi = \half \dot \phi^2 - V(\phi)$$
+We can ignore the spatial derivatives because they become negligible soon after inflation begins due to the ``no-hair'' theorem. Also note that $V(\phi)$ should never be negative as that would imply inflationary contraction. 
+	\begin{enumerate}
+	\item What is the equation of state $w$ in terms of $\phi$? What constraint do we need to put on $\dot \phi^2$ and $V(\phi)$ in order to have accelerating expansion? This is one of the two so-called \textit{slow roll conditions}. 
+	\item How would you write the inflationary Friedmann equation in terms of $\dot\phi$ and $V(\phi)$? 
+	\item What would the inflationary Friedmann equation look like in the slow-roll approximation? 
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Constraining Inflation} \textit{(32 pts)}: In order to determine whether a certain inflationary field might describe our universe, we need to compare the theory's predictions to observations. One of the easiest observations to predict is the amplitude of the density perturbations $\delta \equiv (\eps - \bar \eps)/\bar\eps$. This problem will walk through calculating $\delta$ for the potential $V(\phi) = \lambda \phi^4$ and then using Planck observations to constrain $\lambda$ and decide whether this potential is a viable theory. 
+	\begin{enumerate}
+	%\item First we need to find the value of $\phi$ at the time of recombination. To do this, we use the \textit{e-fold number} $N = \ln\left( \frac{a}{a_i} \right)$, where $a_i$ is the scale factor at the beginning of inflation. Given that the temperature at the beginning of inflation was $T_i = \sn{2}{28}\K$, as stated in class, and that the redshift of recombination is $z = 1090$, what is $N$ at the time of recombination? 
+	\item First we need to find the value of $\phi$ at the time $t_*$ when the CMB anisotropies were sourced. To do this, we use the \textit{e-fold number} $N$, which is defined so that $\frac{a}{a_f} = e^N$, where $a_f$ is the scale factor at the end of inflation. Given that $|1-\Omega_0| \sim 10^{-53}$ at the beginning of inflation (at $t_*$), and that after inflation $|1-\Omega_0| \approx 0.005$, what is $N_*$, the e-folding number when the CMB anisotropies formed? \textit{Hint: Do not use the number from lecture. Recall that curvature goes as $1/a^2$.}
+	\item In the slow roll approximation, we can relate the potential to the e-fold number by 
+	$$\frac{V''(\phi_N)}{V(\phi_N)} \approx \frac{1}{N}$$
+	Use this relation and to find $\phi_*$, the value of $\phi$ at the time when the CMB anisotropies were sourced.
+	\item It can be shown that in the slow roll approximation 
+	$$\delta \approx \left | \frac{V^{3/2}(\phi)}{V'(\phi)} \right |$$
+	Using the Planck observation that $\delta_* \approx 10^{-4}$, find the value of $\lambda$ that is consistent with observations. 
+	\item In the slow roll approximation, we can write the tensor-to-scalar ratio $r$ as 
+	$$r \approx 8 \left( \frac{V'(\phi)}{V(\phi)} \right)^2$$
+	What does the $\lambda\phi^4$ theory predict for $r$ at the time of recombination? Planck has constrained $r_*<0.01$. Is the $\lambda\phi^4$ consistent with observations? 
+	\end{enumerate}
+
+\end{enumerate}
+
+\end{document}  
+
